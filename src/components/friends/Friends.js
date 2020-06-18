@@ -1,14 +1,16 @@
 //React
 import React,{useState} from 'react';
-
+import snapchat from './Snapchat-18457194.jpg';
+import eddie from './IMG_20181011_121752.jpg';
+import reen from './IMG_20190607_172642.jpg';
 //css
 import './friends.css';
 
 const Friends = () => {
     const [_friends]  = useState([
-        {name:'Reen Ngendo' ,age:`${22} years old`,profile:'/static/images/symo.webp',career:'Software developer.'},
-        {name:'Edward Kihiro',age:`${22} years old`,profile:'/static/images/dav.webp',career:'Software developer'},
-        {name:'wambui',age:`${22} years old`,profile:'/static/images/wambui.webp',career:'Software developer'}
+        {name:'Reen Ngendo' ,age:'23 years old',"profile":snapchat,career:'Software developer.'},
+        {name:'Edward Kihiro',age: '30 years old',"profile": eddie ,career:'Software developer'},
+        {name:'wambui',age: '22 years old', "profile":reen ,career:'Software developer'}
     ]);
     return (
         <section className="friends">
